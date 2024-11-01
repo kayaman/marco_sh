@@ -1,0 +1,34 @@
+---
+import Blogmarks from './social-icons/Blogmarks.astro'
+import Codemarks from './social-icons/Codemarks.astro'
+import Credly from './social-icons/Credly.astro'
+import Email from './social-icons/Email.astro'
+import GitHub from './social-icons/GitHub.astro'
+import Learn from './social-icons/Learn.astro'
+import Linkedin from './social-icons/Linkedin.astro'
+import Resume from './social-icons/Resume.astro'
+---
+
+<div class="social-links">
+	<Credly />
+    <Learn />
+    <Blogmarks />
+	<Codemarks />
+    <Resume />
+    <Linkedin />
+    <GitHub />
+	<Email />
+</div>
+
+<style is:global>
+	.social-links,
+	.social-links a {
+		display: flex;
+        gap: 0.75em;
+	}
+	@media (max-width: 720px) {
+		.social-links {
+			display: none;
+		}
+	}
+</style>
